@@ -1,0 +1,11 @@
+{
+  "id": "StopSignsGambit",
+  "name": "Stop Sign's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.StopSignsGambit.StopSignsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Waiting skips the enemy turn",
+  "dependencies": ["GambitApi"]
+}

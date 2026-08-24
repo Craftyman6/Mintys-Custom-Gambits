@@ -1,0 +1,71 @@
+# Build output
+**/bin/
+**/obj/
+dist/
+
+# Mod manager app
+tools/GambonanzaModManager/node_modules/
+tools/GambonanzaModManager/dist/
+tools/GambonanzaModManager/assets/registry-index.json
+tools/GambonanzaModManager/assets/github-oauth.json
+
+# GambonanzaAssets working state: staged PNG replacements and the preview cache.
+# Both are per-user and rebuildable; pack/ is what you zip up to share a skin.
+tools/GambonanzaAssets/pack/
+tools/GambonanzaAssets/.cache/
+
+# Vendor binaries the user must dump from their own game install.
+# These are copyrighted by Unity / Blukulele and must NOT be redistributed.
+refs/
+recon/
+downloads/
+
+# IDE & editor
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+*~
+
+# AI assistants
+# All of it stays local, skills included: they are personal tooling, not
+# something contributors to this repo should be shipped.
+.claude/
+CLAUDE.md
+AGENTS.md
+.cursor/
+.cursorrules
+.cursorignore
+.aider*
+.aiderignore
+.codex/
+.gemini/
+.continue/
+.windsurf/
+.copilot*
+.openai/
+.openhands/
+.crush/
+.devin*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+.directory
+
+# Logs / temp
+*.log
+*.tmp
+nuget.lock.json
+project.lock.json
+
+# iCloud Drive conflict duplicates. This repo commonly lives on a synced
+# Desktop, and iCloud races build.sh's rm -rf + cp when staging Mods/,
+# leaving "Foo 2.dll" next to "Foo.dll". release-framework.sh runs a bare
+# `git add prebuilt/`, so without this they can ride along into a release.
+* 2.*

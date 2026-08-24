@@ -1,0 +1,55 @@
+# The Gambonanza build this checkout of the framework was last verified against.
+#
+# The framework binds to a lot of private game state by name (reflection), so a
+# game update is the usual suspect when something stops working. build.sh hashes
+# the vanilla Assembly-CSharp.dll on every run and prints a note when it differs
+# from what's recorded here.
+#
+# To re-verify after a game update:
+#   1. ./build.sh
+#   2. Launch the game, open the console (F10), run `mods` and `list gambits`.
+#   3. If everything works, update the two values below and note what changed.
+
+steamBuildId=24648699
+assemblySha256=32d0aa4e12f58e65d58f1d5600da269ae2a65a4a2fa69d98610ca060081f3f91
+unityVersion=6000.4.3f1
+verifiedOn=2026-08-15
+
+# Build 24648699 (verified 2026-08-15): no per-type diff was possible - the
+# previous build's Assembly-CSharp.dll was already gone from refs/ by the time
+# the update was noticed, so there is nothing to diff against. Verified the
+# empirical way instead: full ./build.sh, launched, all 7 mods loaded via
+# ModHost, console and GambitApi working, collection and run-info screens
+# inspected. If something does break, this un-diffed update is the first
+# suspect. To diff a future update, copy refs/Assembly-CSharp.dll aside BEFORE
+# re-running build.sh - it overwrites refs/ from the installed game.
+#
+# What the PREVIOUS build (24613134, game v1.4.0) changed that the framework
+# cares about:
+#   - New Graveyard buy-back system: State.GRAVEYARD (appended at the enum END,
+#     so compiled mods keep working), GraveyardManager/Canvas/Button/Infos,
+#     PieceManager.AddPieceToGraveyard, BaseData.Graveyard/GraveyardPieceBought.
+#     The state machine can now pass WIN -> GRAVEYARD -> SHOP after boss levels.
+#     KamikazeGambit feeds sacrificed pieces into the pool (via reflection, so
+#     its prebuilt DLL still loads on pre-graveyard builds).
+#   - WarHorse gambit replaced IN PLACE by Clown: Unlock_Infos.WAR_HORSE ->
+#     CLOWN at the same ordinal (no enum shift), BaseData.WarHorse_Unlock ->
+#     Clown_Unlock, types Gambit_WarHorse/WarHorse_GambitUnlock removed,
+#     Gambit_Clown/Clown_GambitUnlock added. Vanilla gambit count is still 200.
+#   - GambitLibrary.SelectGambits now dedups on SO_Gambit.GambitName instead of
+#     UnityEngine.Object.name (GambitApi already assigns both uniquely).
+#   - SettingsCanvas gained a sixth "Accessibility" tab (m_Accessibility /
+#     m_AccessibilityContainer) plus ~5 new gameplay-tab rows (Skip Animations,
+#     Ask Before Open Graveyard, Cursor, Shake Screen, Tile Coordinates).
+#     Tab BUTTONS are discovered by field TYPE (ButtonSettings) since framework
+#     v1.1.0 - the old name-suffix match missed m_Customize/m_Accessibility and
+#     they leaked into cloned mod modals.
+#   - New types the framework doesn't bind: BoardStructureManager, SkipBossUI,
+#     AchievementType, RunInfo_AchievementHint, AccessibiltySettings (sic),
+#     WarningSettingsBehaviour, GraveyardButton.
+#   - Audited ~112 reflection/compile-time bindings across 36 game types:
+#     everything else the framework touches (GameManager.Start,
+#     CanvasMenu.OnEnable, SettingsCanvas.OnEnable, GambitLibrary buckets,
+#     GambitCollectionSlide, RunInfoCanvas, StockManager, ChessDataManager,
+#     TileBehaviour, BossManager, LocalizationManager, scheme/customize types)
+#     is unchanged. Assets grew to 925 sprites / 236 textures (gallery: 561/236).
