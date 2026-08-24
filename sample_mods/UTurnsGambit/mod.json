@@ -1,0 +1,11 @@
+{
+  "id": "UTurnsGambit",
+  "name": "U-Turn's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.UTurnsGambit.UTurnsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Moving a piece backwards blesses it",
+  "dependencies": ["GambitApi"]
+}

@@ -4,28 +4,28 @@ using Gambonanza.GambitApi;
 using Gambonanza.ModSdk;
 using UnityEngine;
 
-namespace Gambonanza.StopSignsGambit
+namespace Gambonanza.UTurnsGambit
 {
     /// <summary>
     /// Mod entry point. ModHost creates this class from mod.json and calls OnLoad.
     ///
     /// This file is only responsible for registering the card/gambit definition:
     /// name, tooltip, rarity, price, art, and which runtime behaviour to attach.
-    /// The actual gameplay logic is in GambitStopSign.cs.
+    /// The actual gameplay logic is in GambitUTurn.cs.
     /// </summary>
-    public sealed class StopSignsGambitMod : IMod
+    public sealed class UTurnsGambitMod : IMod
     {
         public void OnLoad(IModContext context)
         {
-            context.LogLine("[StopSignsGambit] registering Stop Sign's Gambit.");
+            context.LogLine("[UTurnsGambit] registering Stop Sign's Gambit.");
 
-            // Optional custom art: put `StopSign.png` next to mod.json.
+            // Optional custom art: put `UTurn.png` next to mod.json.
             // In source form that means:
-            //   StopSignsGambit/StopSign.png
+            //   UTurnsGambit/UTurn.png
             // After building/installing, sample_mods/build.sh copies it beside the DLL:
-            //   Mods/StopSignsGambit/StopSign.png
+            //   Mods/UTurnsGambit/UTurn.png
             // If the file is missing, we generate a tiny placeholder so the mod still works.
-            var spritePath = Path.Combine(context.ModDirectory, "StopSign.png");
+            var spritePath = Path.Combine(context.ModDirectory, "UTurn.png");
             var sprite = File.Exists(spritePath)
                 ? ModGambitApi.LoadSprite(spritePath)
                 : GenerateFallbackSprite();
@@ -34,27 +34,27 @@ namespace Gambonanza.StopSignsGambit
             // gambit prefab, fills in metadata, and attaches our BaseGambit subclass
             // to handle runtime behaviour.
             // This ID is also what the console sees for commands like
-            // `give gambit stopsign`, so keep it short and readable.
-            var def = GambitBuilder.Create("stopsign")
-                .WithName("Stop Sign's Gambit")
-                .WithDescription("<color=µ>Waiting</color> skips the enemy's turn.")
-                .WithRarity(Rarity.COMMON)
-                .WithFocus(Gambit_Focus.WAIT)
-                .WithPrice(4)
+            // `give gambit uturn`, so keep it short and readable.
+            var def = GambitBuilder.Create("UTurn")
+                .WithName("U-Turn's Gambit")
+                .WithDescription("Moving a piece backwards <color=ƒ>blesses</color> it.")
+                .WithRarity(Rarity.RARE)
+                .WithFocus(Gambit_Focus.BLESS)
+                .WithPrice(6)
                 .WithVisual(sprite)
                 .WithVisualScale(0.85f)
-                // This tells GambitApi to attach GambitStopSign to the in-run
+                // This tells GambitApi to attach GambitUTurn to the in-run
                 // gambit object. Without this, the card would exist but do nothing.
-                .WithBaseGambit<GambitStopSign>()
+                .WithBaseGambit<GambitUTurn>()
                 // Show the vanilla wait explanation icon/text in the tooltip,
-                // because StopSigns is about waiting
-                .ShowWait()
+                // because UTurns is about waiting
+                .ShowBless()
                 // AutoUnlock means the gambit can appear immediately without adding
                 // a separate unlock achievement.
                 .AutoUnlock(true)
                 .Register();
 
-            context.LogLine($"[StopSignsGambit] registered '{def.Id}'.");
+            context.LogLine($"[UTurnsGambit] registered '{def.Id}'.");
         }
 
         // Keeping the same fallback sprite as Spike's Gambit
