@@ -4,28 +4,28 @@ using Gambonanza.GambitApi;
 using Gambonanza.ModSdk;
 using UnityEngine;
 
-namespace Gambonanza.UTurnsGambit
+namespace Gambonanza.SpeedLimitsGambit
 {
     /// <summary>
     /// Mod entry point. ModHost creates this class from mod.json and calls OnLoad.
     ///
     /// This file is only responsible for registering the card/gambit definition:
     /// name, tooltip, rarity, price, art, and which runtime behaviour to attach.
-    /// The actual gameplay logic is in GambitUTurn.cs.
+    /// The actual gameplay logic is in GambitSpeedLimit.cs.
     /// </summary>
-    public sealed class UTurnsGambitMod : IMod
+    public sealed class SpeedLimitsGambitMod : IMod
     {
         public void OnLoad(IModContext context)
         {
-            context.LogLine("[UTurnsGambit] registering U-Turn's Gambit.");
+            context.LogLine("[SpeedLimitsGambit] registering Speed Limit's Gambit.");
 
-            // Optional custom art: put `UTurn.png` next to mod.json.
+            // Optional custom art: put `SpeedLimit.png` next to mod.json.
             // In source form that means:
-            //   UTurnsGambit/UTurn.png
+            //   SpeedLimitsGambit/SpeedLimit.png
             // After building/installing, sample_mods/build.sh copies it beside the DLL:
-            //   Mods/UTurnsGambit/UTurn.png
+            //   Mods/SpeedLimitsGambit/SpeedLimit.png
             // If the file is missing, we generate a tiny placeholder so the mod still works.
-            var spritePath = Path.Combine(context.ModDirectory, "UTurn.png");
+            var spritePath = Path.Combine(context.ModDirectory, "SpeedLimit.png");
             var sprite = File.Exists(spritePath)
                 ? ModGambitApi.LoadSprite(spritePath)
                 : GenerateFallbackSprite();
@@ -34,27 +34,24 @@ namespace Gambonanza.UTurnsGambit
             // gambit prefab, fills in metadata, and attaches our BaseGambit subclass
             // to handle runtime behaviour.
             // This ID is also what the console sees for commands like
-            // `give gambit uturn`, so keep it short and readable.
-            var def = GambitBuilder.Create("UTurn")
-                .WithName("U-Turn's Gambit")
-                .WithDescription("Moving a piece backwards <color=ƒ>blesses</color> it.")
-                .WithRarity(Rarity.RARE)
-                .WithFocus(Gambit_Focus.BLESS)
-                .WithPrice(6)
+            // `give gambit SpeedLimit`, so keep it short and readable.
+            var def = GambitBuilder.Create("SpeedLimit")
+                .WithName("Speed Limit's Gambit")
+                .WithDescription("Moving a piece 1 tile gives <color=∞>$1</color>. Moving a piece 3 or more tiles costs <color=∞>$3</color>")
+                .WithRarity(Rarity.COMMON)
+                .WithFocus(Gambit_Focus.MONEY)
+                .WithPrice(4)
                 .WithVisual(sprite)
                 .WithVisualScale(0.85f)
-                // This tells GambitApi to attach GambitUTurn to the in-run
+                // This tells GambitApi to attach GambitSpeedLimit to the in-run
                 // gambit object. Without this, the card would exist but do nothing.
-                .WithBaseGambit<GambitUTurn>()
-                // Show the vanilla bless explanation icon/text in the tooltip,
-                // because UTurns is about making pieces blessed
-                .ShowBless()
+                .WithBaseGambit<GambitSpeedLimit>()
                 // AutoUnlock means the gambit can appear immediately without adding
                 // a separate unlock achievement.
                 .AutoUnlock(true)
                 .Register();
 
-            context.LogLine($"[UTurnsGambit] registered '{def.Id}'.");
+            context.LogLine($"[SpeedLimitsGambit] registered '{def.Id}'.");
         }
 
         // Keeping the same fallback sprite as Spike's Gambit

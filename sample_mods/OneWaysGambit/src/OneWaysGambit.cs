@@ -46,8 +46,8 @@ namespace Gambonanza.OneWaysGambit
                 // This tells GambitApi to attach GambitOneWay to the in-run
                 // gambit object. Without this, the card would exist but do nothing.
                 .WithBaseGambit<GambitOneWay>()
-                // Show the vanilla wait explanation icon/text in the tooltip,
-                // because OneWays is about waiting
+                // Show the vanilla protect explanation icon/text in the tooltip,
+                // because OneWays is about making pieces protected
                 .ShowProtect()
                 // AutoUnlock means the gambit can appear immediately without adding
                 // a separate unlock achievement.
