@@ -1,0 +1,11 @@
+{
+  "id": "RoadWorkAheadsGambit",
+  "name": "Road Work Ahead's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.RoadWorkAheadsGambit.RoadWorkAheadsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Capturing an enemy piece crumbles the tile ahead of it.",
+  "dependencies": ["GambitApi"]
+}
