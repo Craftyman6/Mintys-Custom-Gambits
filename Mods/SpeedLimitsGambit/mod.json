@@ -7,5 +7,5 @@
   "enabled": true,
   "gameVersion": ">=1.0",
   "description": "Moving a piece 1 tile gives $1. Moving a piece 3 or more tiles costs $3",
-  "dependencies": ["GambitApi"]
+  "dependencies": ["GambitApi", "PointAMngr"]
 }

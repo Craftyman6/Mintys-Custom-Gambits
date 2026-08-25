@@ -7,5 +7,5 @@
   "enabled": true,
   "gameVersion": ">=1.0",
   "description": "Moving a piece backwards blesses it",
-  "dependencies": ["GambitApi"]
+  "dependencies": ["GambitApi", "PointAMngr"]
 }
