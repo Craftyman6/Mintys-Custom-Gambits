@@ -4,28 +4,28 @@ using Gambonanza.GambitApi;
 using Gambonanza.ModSdk;
 using UnityEngine;
 
-namespace Gambonanza.UTurnsGambit
+namespace Gambonanza.OneWaysGambit
 {
     /// <summary>
     /// Mod entry point. ModHost creates this class from mod.json and calls OnLoad.
     ///
     /// This file is only responsible for registering the card/gambit definition:
     /// name, tooltip, rarity, price, art, and which runtime behaviour to attach.
-    /// The actual gameplay logic is in GambitUTurn.cs.
+    /// The actual gameplay logic is in GambitOneWay.cs.
     /// </summary>
-    public sealed class UTurnsGambitMod : IMod
+    public sealed class OneWaysGambitMod : IMod
     {
         public void OnLoad(IModContext context)
         {
-            context.LogLine("[UTurnsGambit] registering U-Turn's Gambit.");
+            context.LogLine("[OneWaysGambit] registering One Way's Gambit.");
 
-            // Optional custom art: put `UTurn.png` next to mod.json.
+            // Optional custom art: put `OneWay.png` next to mod.json.
             // In source form that means:
-            //   UTurnsGambit/UTurn.png
+            //   OneWaysGambit/OneWay.png
             // After building/installing, sample_mods/build.sh copies it beside the DLL:
-            //   Mods/UTurnsGambit/UTurn.png
+            //   Mods/OneWaysGambit/OneWay.png
             // If the file is missing, we generate a tiny placeholder so the mod still works.
-            var spritePath = Path.Combine(context.ModDirectory, "UTurn.png");
+            var spritePath = Path.Combine(context.ModDirectory, "OneWay.png");
             var sprite = File.Exists(spritePath)
                 ? ModGambitApi.LoadSprite(spritePath)
                 : GenerateFallbackSprite();
@@ -34,27 +34,27 @@ namespace Gambonanza.UTurnsGambit
             // gambit prefab, fills in metadata, and attaches our BaseGambit subclass
             // to handle runtime behaviour.
             // This ID is also what the console sees for commands like
-            // `give gambit uturn`, so keep it short and readable.
-            var def = GambitBuilder.Create("UTurn")
-                .WithName("U-Turn's Gambit")
-                .WithDescription("Moving a piece backwards <color=ƒ>blesses</color> it.")
+            // `give gambit OneWay`, so keep it short and readable.
+            var def = GambitBuilder.Create("OneWay")
+                .WithName("One Way's Gambit")
+                .WithDescription("Moving a piece to the right <color=æ>protects</color> it.")
                 .WithRarity(Rarity.RARE)
-                .WithFocus(Gambit_Focus.BLESS)
+                .WithFocus(Gambit_Focus.PROTECTIVE)
                 .WithPrice(6)
                 .WithVisual(sprite)
                 .WithVisualScale(0.85f)
-                // This tells GambitApi to attach GambitUTurn to the in-run
+                // This tells GambitApi to attach GambitOneWay to the in-run
                 // gambit object. Without this, the card would exist but do nothing.
-                .WithBaseGambit<GambitUTurn>()
+                .WithBaseGambit<GambitOneWay>()
                 // Show the vanilla wait explanation icon/text in the tooltip,
-                // because UTurns is about waiting
-                .ShowBless()
+                // because OneWays is about waiting
+                .ShowProtect()
                 // AutoUnlock means the gambit can appear immediately without adding
                 // a separate unlock achievement.
                 .AutoUnlock(true)
                 .Register();
 
-            context.LogLine($"[UTurnsGambit] registered '{def.Id}'.");
+            context.LogLine($"[OneWaysGambit] registered '{def.Id}'.");
         }
 
         // Keeping the same fallback sprite as Spike's Gambit

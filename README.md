@@ -4,3 +4,5 @@ Mods for Gambonanza that add custom gambits to the game through the usage of the
 Waiting skips the enemy turn
 ## U-Turn's Gambit
 Moving a piece backwards blesses it
+## One Way's Gambit
+Moving a piece to the right protects it

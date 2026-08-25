@@ -1,0 +1,11 @@
+{
+  "id": "OneWaysGambit",
+  "name": "One Way's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.OneWaysGambit.OneWaysGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Moving a piece to the right protects it",
+  "dependencies": ["GambitApi"]
+}
