@@ -93,15 +93,13 @@ namespace Gambonanza.SpeedLimitsGambit
         {
             if (RewardWithMoney)
             {
+                // Give money and produce money effect
                 SingletonMonoBehaviour<ChessDataManager>.Instance.IncreaseCoin(VALUE_TO_EARN);
                 SingletonMonoBehaviour<MoneyAnimationManager>.Instance.SpawnMoney(base.transform, VALUE_TO_EARN);
             }
-            else if (SingletonMonoBehaviour<ChessDataManager>.Instance.Coins <= 0)
-            {
-                UnityEngine.Object.Destroy(base.gameObject);
-            }
             else
             {
+                // Remove money
                 SingletonMonoBehaviour<ChessDataManager>.Instance.DecreaseCoin(VALUE_TO_LOSE);
             }
             // BOING!!
