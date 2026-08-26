@@ -37,7 +37,7 @@ namespace Gambonanza.OneWaysGambit
             // `give gambit OneWay`, so keep it short and readable.
             var def = GambitBuilder.Create("OneWay")
                 .WithName("One Way's Gambit")
-                .WithDescription("Moving a piece to the right <color=æ>protects</color> it.")
+                .WithDescription("Moving a piece to the right <color=æ>PROTECTS</color> it.")
                 .WithRarity(Rarity.RARE)
                 .WithFocus(Gambit_Focus.PROTECTIVE)
                 .WithPrice(6)

@@ -37,7 +37,7 @@ namespace Gambonanza.UTurnsGambit
             // `give gambit uturn`, so keep it short and readable.
             var def = GambitBuilder.Create("UTurn")
                 .WithName("U-Turn's Gambit")
-                .WithDescription("Moving a piece backwards <color=ƒ>blesses</color> it.")
+                .WithDescription("Moving a piece backwards <color=ƒ>BLESSES</color> it.")
                 .WithRarity(Rarity.RARE)
                 .WithFocus(Gambit_Focus.BLESS)
                 .WithPrice(6)

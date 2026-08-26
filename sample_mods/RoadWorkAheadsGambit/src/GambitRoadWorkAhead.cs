@@ -9,6 +9,9 @@ namespace Gambonanza.RoadWorkAheadsGambit
 {
     /// <summary>
     /// Road Work Ahead's Gambit behaviour.
+    /// 
+    /// Any time an enemy piece is captured, set the tile
+    /// above it to be crumbled.
     /// </summary>
     public sealed class GambitRoadWorkAhead : BaseGambit
     {

@@ -1,0 +1,11 @@
+{
+  "id": "GoldenRoadsGambit",
+  "name": "Golden Road's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.GoldenRoadsGambit.GoldenRoadsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Promoting into a king turns every tile golden, fills your stock with kings, gives Dainsleif's Gambit, and destroys this gambit.",
+  "dependencies": ["GambitApi"]
+}

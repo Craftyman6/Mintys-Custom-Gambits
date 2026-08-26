@@ -4,28 +4,28 @@ using Gambonanza.GambitApi;
 using Gambonanza.ModSdk;
 using UnityEngine;
 
-namespace Gambonanza.StopSignsGambit
+namespace Gambonanza.GoldenRoadsGambit
 {
     /// <summary>
     /// Mod entry point. ModHost creates this class from mod.json and calls OnLoad.
     ///
     /// This file is only responsible for registering the card/gambit definition:
     /// name, tooltip, rarity, price, art, and which runtime behaviour to attach.
-    /// The actual gameplay logic is in GambitStopSign.cs.
+    /// The actual gameplay logic is in GambitGoldenRoad.cs.
     /// </summary>
-    public sealed class StopSignsGambitMod : IMod
+    public sealed class GoldenRoadsGambitMod : IMod
     {
         public void OnLoad(IModContext context)
         {
-            context.LogLine("[StopSignsGambit] registering Stop Sign's Gambit.");
+            context.LogLine("[GoldenRoadsGambit] registering Golden Road's Gambit.");
 
-            // Optional custom art: put `StopSign.png` next to mod.json.
+            // Optional custom art: put `GoldenRoad.png` next to mod.json.
             // In source form that means:
-            //   StopSignsGambit/StopSign.png
+            //   GoldenRoadsGambit/GoldenRoad.png
             // After building/installing, sample_mods/build.sh copies it beside the DLL:
-            //   Mods/StopSignsGambit/StopSign.png
+            //   Mods/GoldenRoadsGambit/GoldenRoad.png
             // If the file is missing, we generate a tiny placeholder so the mod still works.
-            var spritePath = Path.Combine(context.ModDirectory, "StopSign.png");
+            var spritePath = Path.Combine(context.ModDirectory, "GoldenRoad.png");
             var sprite = File.Exists(spritePath)
                 ? ModGambitApi.LoadSprite(spritePath)
                 : GenerateFallbackSprite();
@@ -34,27 +34,30 @@ namespace Gambonanza.StopSignsGambit
             // gambit prefab, fills in metadata, and attaches our BaseGambit subclass
             // to handle runtime behaviour.
             // This ID is also what the console sees for commands like
-            // `give gambit stopsign`, so keep it short and readable.
-            var def = GambitBuilder.Create("stopsign")
-                .WithName("Stop Sign's Gambit")
-                .WithDescription("<color=µ>WAITING</color> skips the enemy's turn.")
-                .WithRarity(Rarity.COMMON)
-                .WithFocus(Gambit_Focus.WAIT)
-                .WithPrice(4)
+            // `give gambit GoldenRoad`, so keep it short and readable.
+            var def = GambitBuilder.Create("GoldenRoad")
+                .WithName("Golden Road's Gambit")
+                .WithDescription("<rainb l=0.5>PROMOTING</rainb> into a <sprite=9> <color=£>KING</color> turns every tile <sprite=1> <color=∞>GOLDEN</color>, fills your stock with <sprite=9> <color=£>KINGS</color>, gives <color=Ø>DAINSLEIF'S GAMBIT</color>, and destroys this gambit.")
+                .WithRarity(Rarity.LEGENDARY)
+                .WithFocus(Gambit_Focus.KING)
+                .WithPrice(12)
                 .WithVisual(sprite)
                 .WithVisualScale(0.85f)
-                // This tells GambitApi to attach GambitStopSign to the in-run
+                // This tells GambitApi to attach GambitGoldenRoad to the in-run
                 // gambit object. Without this, the card would exist but do nothing.
-                .WithBaseGambit<GambitStopSign>()
-                // Show the vanilla wait explanation icon/text in the tooltip,
-                // because StopSigns is about waiting
-                .ShowWait()
+                .WithBaseGambit<GambitGoldenRoad>()
+                // Show the vanilla golden tile explanation icon/text in the tooltip,
+                // because GoldenRoads is about placing golden tiles
+                .ShowGoldenTile()
+                // Show the vanilla promotion explanation icon/text in the tooltip,
+                // because GoldenRoads is triggered with a promotion
+                .ShowPromotion()
                 // AutoUnlock means the gambit can appear immediately without adding
                 // a separate unlock achievement.
                 .AutoUnlock(true)
                 .Register();
 
-            context.LogLine($"[StopSignsGambit] registered '{def.Id}'.");
+            context.LogLine($"[GoldenRoadsGambit] registered '{def.Id}'.");
         }
 
         // Keeping the same fallback sprite as Spike's Gambit
