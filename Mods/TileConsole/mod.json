@@ -1,0 +1,10 @@
+{
+  "id": "TileConsole",
+  "name": "Tile Console",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.TileConsole.TileConsoleMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Supplies console commands for manipulating tiles"
+}
