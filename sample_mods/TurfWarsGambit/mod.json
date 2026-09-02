@@ -1,0 +1,11 @@
+{
+  "id": "TurfWarsGambit",
+  "name": "Turf War's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.TurfWarsGambit.TurfWarsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Pieces paint tiles their respective color. Captures splash color onto adjacent tiles.",
+  "dependencies": ["GambitApi"]
+}
