@@ -6,6 +6,6 @@
   "entry": "Gambonanza.TurfWarsGambit.TurfWarsGambitMod",
   "enabled": true,
   "gameVersion": ">=1.0",
-  "description": "Pieces paint tiles their respective color. Captures splash color onto adjacent tiles.",
+  "description": "Pieces paint tiles their respective color, splashing into adjacent tiles on capture. Earn $1 per 5 white tiles at end of game.",
   "dependencies": ["GambitApi"]
 }
