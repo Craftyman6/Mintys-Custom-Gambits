@@ -27,7 +27,7 @@ namespace Gambonanza.TileConsole
     /// 
     /// The second argument of the command specifies what will be done
     /// to the tile(s). Set the argument to a tile modifier ("golden",
-    /// "protective", "blessing", "trap", "phantom", "cursed") to modify
+    /// "protective", "blessing", "trap", "phantom", "cursed", "default") to modify
     /// the tile(s) to the respective modification. Set the argument to
     /// a color ("black", "white") to modify the tile color of the tile(s).
     /// Set the argument to "crumble" to crumble the tile(s). Set the
@@ -198,9 +198,10 @@ namespace Gambonanza.TileConsole
                 console.Close();
             },
 
-            // Register the tab completer. At the moment, the second
-            // argument's tab completion is being registered has the
-            // first argument.
+            // Register the tab completer.
+            // NOTE: At the moment, the second argument's tab completion is being 
+            // registered has the first argument. This is a known issue that does
+            // not have a fix at the current moment.
             (args, argIndex) => 
                 argIndex == 0 ? 
                 (
