@@ -1,0 +1,11 @@
+{
+  "id": "TimeLoopsGambit",
+  "name": "Time Loop's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.TimeLoopsGambit.TimeLoopsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Crumble mode will never begin.",
+  "dependencies": ["GambitApi"]
+}
