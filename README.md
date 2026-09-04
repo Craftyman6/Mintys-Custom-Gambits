@@ -10,3 +10,5 @@ the board.
 
 ## Misc Gambits
 **Turf War's Gambit:** Pieces paint tiles their respective color, splashing into adjacent tiles on capture. Earn $1 per 5 white tiles at end of game
+
+**Gumbo's Gambit:** When a tile falls, the tile under it begins to crumble

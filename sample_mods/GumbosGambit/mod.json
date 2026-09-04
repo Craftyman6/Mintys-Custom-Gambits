@@ -1,0 +1,11 @@
+{
+  "id": "GumbosGambit",
+  "name": "Gumbo's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.GumbosGambit.GumbosGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "When a tile falls, the tile under it begins to crumble.",
+  "dependencies": ["GambitApi"]
+}
