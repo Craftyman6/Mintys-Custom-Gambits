@@ -1,0 +1,11 @@
+{
+  "id": "PrincesGambit",
+  "name": "Prince's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.PrincesGambit.PrincesGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "After each game, shuffle the tiles on the board. Stepping on 46 modified tiles gives $100 and replaces this gambit with Inheritance's Gambit",
+  "dependencies": ["GambitApi"]
+}

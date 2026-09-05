@@ -10,6 +10,8 @@ namespace Gambonanza.TimeLoopsGambit
 {
     /// <summary>
     /// Time Loop's Gambit behaviour.
+    /// 
+    /// Activates the freeze setting of the CrumbleApi.
     /// </summary>
     public sealed class GambitTimeLoop : BaseGambit
     {

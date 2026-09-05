@@ -14,3 +14,5 @@ the board.
 **Gumbo's Gambit:** When a tile falls, the tile under it begins to crumble
 
 **Time Loop's Gambit:** Crumble mode will never begin
+
+**Prince's Gambit:** After each game, shuffle the tiles on the board. Stepping on 46 modified tiles gives $100 and replaces this gambit with Inheritance's Gambit
