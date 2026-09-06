@@ -16,3 +16,5 @@ the board.
 **Time Loop's Gambit:** Crumble mode will never begin
 
 **Prince's Gambit:** After each game, shuffle the tiles on the board. Stepping on 46 modified tiles gives $100 and replaces this gambit with Inheritance's Gambit
+
+**Temp Work's Gambit:** After each game, earn $10 if there's a queen adjacent to a pawn.
