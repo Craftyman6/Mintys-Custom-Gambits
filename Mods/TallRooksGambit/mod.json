@@ -1,0 +1,11 @@
+{
+  "id": "TallRooksGambit",
+  "name": "Tall Rook's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.TallRooksGambit.TallRooksGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Moving a rook 4 or more tiles skips the enemy turn.",
+  "dependencies": ["GambitApi", "PointAMngr"]
+}

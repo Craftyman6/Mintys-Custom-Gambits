@@ -6,6 +6,6 @@
   "entry": "Gambonanza.TempWorksGambit.TempWorksGambitMod",
   "enabled": true,
   "gameVersion": ">=1.0",
-  "description": "At the end of a game, earn $10 if there's a queen adjacent to a pawn.",
+  "description": "After each game, earn $10 if there's a queen adjacent to a pawn.",
   "dependencies": ["GambitApi"]
 }

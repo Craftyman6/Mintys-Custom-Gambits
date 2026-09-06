@@ -18,3 +18,5 @@ the board.
 **Prince's Gambit:** After each game, shuffle the tiles on the board. Stepping on 46 modified tiles gives $100 and replaces this gambit with Inheritance's Gambit
 
 **Temp Work's Gambit:** After each game, earn $10 if there's a queen adjacent to a pawn.
+
+**Tall Rook's Gambit:** Moving a rook 4 or more tiles skips the enemy turn.
