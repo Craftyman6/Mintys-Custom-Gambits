@@ -1,0 +1,145 @@
+{
+  "formatVersion": 1,
+  "id": "tp-e0c13502",
+  "name": "Rin Pieces",
+  "author": "",
+  "summary": "",
+  "description": "",
+  "version": "1.0.0",
+  "gameBuild": "24858528",
+  "createdAt": "2026-10-01T16:22:09.310Z",
+  "updatedAt": "2026-10-02T01:08:47.887Z",
+  "images": [
+    {
+      "assetId": "spr-chesspieces",
+      "kind": "texture",
+      "name": "SPR_ChessPieces",
+      "label": "ChessPieces",
+      "category": "Chess pieces",
+      "width": 256,
+      "height": 64,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-chesspieces",
+      "atlasName": "SPR_ChessPieces",
+      "rect": null,
+      "file": "images\\spr-chesspieces.png",
+      "addedAt": "2026-10-01T16:22:37.712Z"
+    }
+  ],
+  "texts": [],
+  "textures": [
+    {
+      "targetId": "spr-chesspieces",
+      "name": "SPR_ChessPieces",
+      "label": "ChessPieces",
+      "width": 256,
+      "height": 64,
+      "format": "RGBA32",
+      "file": "atlases/spr-chesspieces.png"
+    }
+  ],
+  "audio": [],
+  "sprites": [
+    {
+      "assetId": "spr-pawn-w",
+      "name": "SPR_Pawn_W",
+      "label": "Pawn W",
+      "category": "Chess pieces",
+      "atlasId": "spr-chesspieces",
+      "texture": "SPR_ChessPieces",
+      "rect": [
+        11,
+        34,
+        21,
+        28
+      ],
+      "original": [
+        11,
+        34,
+        21,
+        23
+      ]
+    },
+    {
+      "assetId": "spr-rook-w",
+      "name": "SPR_Rook_W",
+      "label": "Rook W",
+      "category": "Chess pieces",
+      "atlasId": "spr-chesspieces",
+      "texture": "SPR_ChessPieces",
+      "rect": [
+        51,
+        34,
+        21,
+        30
+      ],
+      "original": [
+        51,
+        34,
+        21,
+        25
+      ]
+    },
+    {
+      "assetId": "spr-knight-w",
+      "name": "SPR_Knight_W",
+      "label": "Knight W",
+      "category": "Chess pieces",
+      "atlasId": "spr-chesspieces",
+      "texture": "SPR_ChessPieces",
+      "rect": [
+        90,
+        34,
+        23,
+        30
+      ],
+      "original": [
+        90,
+        34,
+        23,
+        26
+      ]
+    },
+    {
+      "assetId": "spr-queen-w",
+      "name": "SPR_Queen_W",
+      "label": "Queen W",
+      "category": "Chess pieces",
+      "atlasId": "spr-chesspieces",
+      "texture": "SPR_ChessPieces",
+      "rect": [
+        168,
+        34,
+        27,
+        30
+      ],
+      "original": [
+        168,
+        34,
+        27,
+        25
+      ]
+    },
+    {
+      "assetId": "spr-king-w",
+      "name": "SPR_King_W",
+      "label": "King W",
+      "category": "Chess pieces",
+      "atlasId": "spr-chesspieces",
+      "texture": "SPR_ChessPieces",
+      "rect": [
+        210,
+        34,
+        23,
+        30
+      ],
+      "original": [
+        210,
+        34,
+        23,
+        24
+      ]
+    }
+  ]
+}
