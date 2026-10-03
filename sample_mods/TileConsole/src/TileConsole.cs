@@ -12,7 +12,7 @@ namespace Gambonanza.TileConsole
 {
     /// <summary>
     /// Registers a command named "tile" to the console. This command
-    /// is to be used to modify/color/crumble a tile. This can also be
+    /// is to be used to modify/color/crumble/fall a tile. This can also be
     /// applied to a whole row/column of tiles, or even every tile on
     /// the board.
     /// 
@@ -30,17 +30,17 @@ namespace Gambonanza.TileConsole
     /// "protective", "blessing", "trap", "phantom", "cursed", "default") to modify
     /// the tile(s) to the respective modification. Set the argument to
     /// a color ("black", "white") to modify the tile color of the tile(s).
-    /// Set the argument to "crumble" to crumble the tile(s). Set the
-    /// argument to "default" to remove tile modification and reappear a
-    /// crumbled tile.
+    /// Set the argument to "crumble" to make the tile(s) shake. Set the
+    /// argument to "fall" to make the tile(s) fall. Set the argument to
+    /// "default" to remove tile modification and reappear a fallen/crumbling tile.
     /// </summary>
     public sealed class TileConsoleMod : IMod
     {
         private IModContext _context;
         [SerializeField]
-        private string USAGE_MESSAGE = "tile [all|a1-h5|a-h|1-5] [golden|protective|blessing|trap|phantom|cursed|white|black|crumble|default]";
+        private string USAGE_MESSAGE = "tile [all|a1-h5|a-h|1-5] [golden|protective|blessing|trap|phantom|cursed|white|black|crumble|fall|default]";
         [SerializeField]
-        private string[] MODIFICATIONS = {"golden", "protective", "blessing", "trap", "phantom", "cursed", "white", "black", "crumble", "default"} ;
+        private string[] MODIFICATIONS = {"golden", "protective", "blessing", "trap", "phantom", "cursed", "white", "black", "crumble", "fall", "default"} ;
         // List of tiles to modify. When a command is run, the list is
         // cleared, filled, then iterated through for modification. List
         // type is a custom object type created for this mod.
@@ -274,11 +274,15 @@ namespace Gambonanza.TileConsole
                     tile.ChangeColorBlack();
                     break;
                 case "crumble":
+                    tile.Crumble();
+                    break;
+                case "fall":
                     tile.Fall(); 
                     break;
                 case "default":
                     tile.TurnToDefault();
                     if (tile.HasFell) {tile.ReAppear();}
+                    if (tile.IsShaking) {tile.StopCrumble();}
                     break;
                 default:
                     throw new Exception("Tile modification type unrecognized.");
