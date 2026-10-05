@@ -1,0 +1,10 @@
+{
+  "id": "KevBorclickUnblue",
+  "name": "Kev Borclick Unblue",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.KevBorclickUnblue.KevBorclickUnblueMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Removes blue glow beneath Kev Borclick's eyes"
+}
