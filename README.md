@@ -7,6 +7,8 @@ applied to a whole row/column of tiles, or even every tile on
 the board.
 ## Kev Borclick Unblue
 Removes blue glow beneath Kev Borclick's eyes (useful for reskins)
+## Mechagnus Untext
+Removes all text, static, and broken pixels from M3CH4GNUS C4RLS3N (useful for reskins)
 ## Roadside Pack
 <img width="3840" height="2160" alt="RoadsidePack" src="https://github.com/user-attachments/assets/a609fddc-333e-44ff-90e7-9cb9b8142429" />
 
