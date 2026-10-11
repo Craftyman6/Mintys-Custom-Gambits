@@ -17,7 +17,7 @@ namespace Gambonanza.MechagnusUntext
     /// </summary>
     public sealed class MechagnusUntextMod : IMod
     {
-        private readonly string[] REMOVED_NODES = {"ContainerMask", "Broken_Pixel", "NoiseEffect"};
+        private readonly string[] REMOVED_NODES = {"ContainerMask", "Broken_Pixel", "NoiseEffect", "FaceHalo"};
         private const string USAGE_MESSAGE = "mechuntextlogging [on|off]";
 
         private IModContext _context;

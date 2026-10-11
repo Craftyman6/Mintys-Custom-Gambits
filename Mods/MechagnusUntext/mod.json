@@ -6,5 +6,5 @@
   "entry": "Gambonanza.MechagnusUntext.MechagnusUntextMod",
   "enabled": true,
   "gameVersion": ">=1.0",
-  "description": "Removes text from M3CH4GNUS C4RLS3N"
+  "description": "Removes all text, static, and broken pixels from M3CH4GNUS C4RLS3N"
 }
