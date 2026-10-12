@@ -1,0 +1,11 @@
+{
+  "id": "HauntingsGambit",
+  "name": "Haunting's Gambit",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.HauntingsGambit.HauntingsGambitMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Selling a gambit gives Ghost's Gambit. 6/66 chance of giving Demon's Gambit instead.",
+  "dependencies": ["GambitApi"]
+}
