@@ -1,0 +1,436 @@
+{
+  "formatVersion": 1,
+  "id": "tp-1ccd804b",
+  "name": "Majora's Moon",
+  "author": "",
+  "summary": "",
+  "description": "",
+  "version": "1.0.0",
+  "gameBuild": "24858528",
+  "createdAt": "2026-10-11T14:11:05.335Z",
+  "updatedAt": "2026-10-11T14:24:29.903Z",
+  "images": [
+    {
+      "assetId": "spr-clocknumber",
+      "kind": "texture",
+      "name": "SPR_ClockNumber",
+      "label": "ClockNumber",
+      "category": "Icons & UI",
+      "width": 128,
+      "height": 64,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-clocknumber",
+      "atlasName": "SPR_ClockNumber",
+      "rect": null,
+      "base": null,
+      "file": "images/spr-clocknumber.png",
+      "addedAt": "2026-10-11T14:11:05.348Z"
+    },
+    {
+      "assetId": "spr-icons",
+      "kind": "texture",
+      "name": "SPR_Icons",
+      "label": "Icons",
+      "category": "Icons & UI",
+      "width": 256,
+      "height": 64,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-icons",
+      "atlasName": "SPR_Icons",
+      "rect": null,
+      "base": null,
+      "file": "images/spr-icons.png",
+      "addedAt": "2026-10-11T14:11:05.355Z"
+    },
+    {
+      "assetId": "spr-boss-clock",
+      "kind": "texture",
+      "name": "SPR_Boss_Clock",
+      "label": "Boss Clock",
+      "category": "Bosses",
+      "width": 256,
+      "height": 128,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-boss-clock",
+      "atlasName": "SPR_Boss_Clock",
+      "rect": null,
+      "base": null,
+      "file": "images/spr-boss-clock.png",
+      "addedAt": "2026-10-11T14:11:05.363Z"
+    },
+    {
+      "assetId": "boss-5",
+      "kind": "sprite",
+      "name": "Boss_5",
+      "label": "Boss 5",
+      "category": "Bosses",
+      "width": 1519,
+      "height": 883,
+      "format": "DXT5",
+      "compressed": true,
+      "atlasId": "boss-5-2",
+      "atlasName": "Boss_5",
+      "rect": [
+        211,
+        197,
+        1519,
+        883
+      ],
+      "base": [
+        211,
+        197,
+        1519,
+        883
+      ],
+      "file": "images/boss-5.png",
+      "addedAt": "2026-10-11T14:11:05.697Z"
+    },
+    {
+      "assetId": "boss-5-2",
+      "kind": "texture",
+      "name": "Boss_5",
+      "label": "Boss 5",
+      "category": "Bosses",
+      "width": 1920,
+      "height": 1080,
+      "format": "DXT5",
+      "compressed": true,
+      "atlasId": "boss-5-2",
+      "atlasName": "Boss_5",
+      "rect": null,
+      "base": null,
+      "file": "images/boss-5-2.png",
+      "addedAt": "2026-10-11T14:11:06.074Z"
+    }
+  ],
+  "sprites": [
+    {
+      "assetId": "spr-boss-mouth",
+      "name": "SPR_Boss_Mouth",
+      "label": "Boss Mouth",
+      "category": "Bosses",
+      "atlasId": "spr-boss-clock",
+      "texture": "SPR_Boss_Clock",
+      "rect": [
+        9,
+        63,
+        47,
+        21
+      ],
+      "original": [
+        12,
+        63,
+        41,
+        21
+      ]
+    },
+    {
+      "assetId": "spr-boss-clock-teeth-up",
+      "name": "SPR_Boss_Clock_Teeth_Up",
+      "label": "Boss Clock Teeth Up",
+      "category": "Bosses",
+      "atlasId": "spr-boss-clock",
+      "texture": "SPR_Boss_Clock",
+      "rect": [
+        3,
+        43,
+        37,
+        15
+      ],
+      "original": [
+        3,
+        45,
+        37,
+        13
+      ]
+    },
+    {
+      "assetId": "spr-boss-clock-teethdown",
+      "name": "SPR_Boss_Clock_TeethDown",
+      "label": "Boss Clock TeethDown",
+      "category": "Bosses",
+      "atlasId": "spr-boss-clock",
+      "texture": "SPR_Boss_Clock",
+      "rect": [
+        2,
+        17,
+        38,
+        14
+      ],
+      "original": [
+        2,
+        17,
+        38,
+        13
+      ]
+    },
+    {
+      "assetId": "spr-clocknumber-10",
+      "name": "SPR_ClockNumber_10",
+      "label": "ClockNumber 10",
+      "category": "Icons & UI",
+      "atlasId": "spr-clocknumber",
+      "texture": "SPR_ClockNumber",
+      "rect": [
+        71,
+        22,
+        16,
+        15
+      ],
+      "original": [
+        72,
+        22,
+        13,
+        15
+      ]
+    },
+    {
+      "assetId": "spr-clocknumber-3",
+      "name": "SPR_ClockNumber_3",
+      "label": "ClockNumber 3",
+      "category": "Icons & UI",
+      "atlasId": "spr-clocknumber",
+      "texture": "SPR_ClockNumber",
+      "rect": [
+        58,
+        42,
+        13,
+        16
+      ],
+      "original": [
+        58,
+        42,
+        13,
+        15
+      ]
+    },
+    {
+      "assetId": "spr-clocknumber-1",
+      "name": "SPR_ClockNumber_1",
+      "label": "ClockNumber 1",
+      "category": "Icons & UI",
+      "atlasId": "spr-clocknumber",
+      "texture": "SPR_ClockNumber",
+      "rect": [
+        26,
+        42,
+        13,
+        15
+      ],
+      "original": [
+        27,
+        42,
+        11,
+        15
+      ]
+    },
+    {
+      "assetId": "spr-clocknumber-0",
+      "name": "SPR_ClockNumber_0",
+      "label": "ClockNumber 0",
+      "category": "Icons & UI",
+      "atlasId": "spr-clocknumber",
+      "texture": "SPR_ClockNumber",
+      "rect": [
+        10,
+        42,
+        11,
+        15
+      ],
+      "original": [
+        11,
+        42,
+        10,
+        15
+      ]
+    },
+    {
+      "assetId": "spr-clocknumber-11",
+      "name": "SPR_ClockNumber_11",
+      "label": "ClockNumber 11",
+      "category": "Icons & UI",
+      "atlasId": "spr-clocknumber",
+      "texture": "SPR_ClockNumber",
+      "rect": [
+        87,
+        22,
+        21,
+        15
+      ],
+      "original": [
+        89,
+        22,
+        17,
+        15
+      ]
+    },
+    {
+      "assetId": "spr-clocknumber-5",
+      "name": "SPR_ClockNumber_5",
+      "label": "ClockNumber 5",
+      "category": "Icons & UI",
+      "atlasId": "spr-clocknumber",
+      "texture": "SPR_ClockNumber",
+      "rect": [
+        92,
+        42,
+        14,
+        16
+      ],
+      "original": [
+        93,
+        42,
+        13,
+        15
+      ]
+    },
+    {
+      "assetId": "spr-icons-clock",
+      "name": "SPR_Icons_Clock",
+      "label": "Icons Clock",
+      "category": "Icons & UI",
+      "atlasId": "spr-icons",
+      "texture": "SPR_Icons",
+      "rect": [
+        233,
+        15,
+        14,
+        17
+      ],
+      "original": [
+        233,
+        16,
+        14,
+        16
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "section": "boss-infos",
+      "key": "clock-name",
+      "values": [
+        {
+          "lang": "*",
+          "value": "Majora's Moon"
+        }
+      ],
+      "original": "Kev Borclick"
+    },
+    {
+      "section": "boss-subtitle",
+      "key": "clock",
+      "values": [
+        {
+          "lang": "*",
+          "value": "Consumer of Termina"
+        }
+      ],
+      "original": "Clock of Fate"
+    },
+    {
+      "section": "boss-infos",
+      "key": "clock-lore",
+      "values": [
+        {
+          "lang": "*",
+          "value": "The wickedness of the Majora's Mask has set this moon on a collission course to devour everything and everyone. Consumption is its only goal."
+        }
+      ],
+      "original": "The eternal archive, keeper of all future games. But when he glimpsed his master’s fate, his clock broke, and its hands replay the same destiny forever."
+    }
+  ],
+  "textures": [
+    {
+      "targetId": "spr-clocknumber",
+      "name": "SPR_ClockNumber",
+      "label": "ClockNumber",
+      "width": 128,
+      "height": 64,
+      "format": "RGBA32",
+      "file": "atlases/spr-clocknumber.png"
+    },
+    {
+      "targetId": "spr-icons",
+      "name": "SPR_Icons",
+      "label": "Icons",
+      "width": 256,
+      "height": 64,
+      "format": "RGBA32",
+      "file": "atlases/spr-icons.png"
+    },
+    {
+      "targetId": "spr-boss-clock",
+      "name": "SPR_Boss_Clock",
+      "label": "Boss Clock",
+      "width": 256,
+      "height": 128,
+      "format": "RGBA32",
+      "file": "atlases/spr-boss-clock.png"
+    },
+    {
+      "targetId": "boss-5-2",
+      "name": "Boss_5",
+      "label": "Boss 5",
+      "width": 1920,
+      "height": 1080,
+      "format": "DXT5",
+      "file": "atlases/boss-5-2.png"
+    }
+  ],
+  "audio": [
+    {
+      "assetId": "audio-s-clockboss-happy",
+      "name": "S_ClockBoss_Happy",
+      "label": "S ClockBoss Happy",
+      "file": "audio/audio-s-clockboss-happy.wav",
+      "channels": 2,
+      "sampleRate": 22050,
+      "duration": 5.210113378684807,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-clockboss-death",
+      "name": "S_ClockBoss_Death",
+      "label": "S ClockBoss Death",
+      "file": "audio/audio-s-clockboss-death.wav",
+      "channels": 1,
+      "sampleRate": 32000,
+      "duration": 5.59459375,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-clockboss-angry",
+      "name": "S_ClockBoss_Angry",
+      "label": "S ClockBoss Angry",
+      "file": "audio/audio-s-clockboss-angry.wav",
+      "channels": 1,
+      "sampleRate": 32000,
+      "duration": 3.48875,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-clockboss-power",
+      "name": "S_ClockBoss_Power",
+      "label": "S ClockBoss Power",
+      "file": "audio/audio-s-clockboss-power.wav",
+      "channels": 2,
+      "sampleRate": 32000,
+      "duration": 6.610125,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-clockboss-apparition",
+      "name": "S_ClockBoss_Apparition",
+      "label": "S ClockBoss Apparition",
+      "file": "audio/audio-s-clockboss-apparition.wav",
+      "channels": 1,
+      "sampleRate": 32000,
+      "duration": 9.02434375,
+      "bits": 16
+    }
+  ]
+}

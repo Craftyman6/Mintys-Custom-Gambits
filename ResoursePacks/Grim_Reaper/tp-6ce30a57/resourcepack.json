@@ -1,0 +1,206 @@
+{
+  "formatVersion": 1,
+  "id": "tp-6ce30a57",
+  "name": "Grim Reaper",
+  "author": "",
+  "summary": "",
+  "description": "",
+  "version": "1.0.0",
+  "gameBuild": "24858528",
+  "createdAt": "2026-10-10T14:20:27.612Z",
+  "updatedAt": "2026-10-11T15:07:09.701Z",
+  "images": [
+    {
+      "assetId": "spr-boss-final",
+      "kind": "texture",
+      "name": "SPR_Boss_Final",
+      "label": "Boss Final",
+      "category": "Bosses",
+      "width": 256,
+      "height": 128,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-boss-final",
+      "atlasName": "SPR_Boss_Final",
+      "rect": null,
+      "base": null,
+      "file": "images/spr-boss-final.png",
+      "addedAt": "2026-10-11T04:07:25.232Z"
+    },
+    {
+      "assetId": "boss-8",
+      "kind": "texture",
+      "name": "Boss_8",
+      "label": "Boss 8",
+      "category": "Bosses",
+      "width": 1920,
+      "height": 1080,
+      "format": "DXT5",
+      "compressed": true,
+      "atlasId": "boss-8",
+      "atlasName": "Boss_8",
+      "rect": null,
+      "base": null,
+      "file": "images/boss-8.png",
+      "addedAt": "2026-10-11T15:03:08.299Z"
+    }
+  ],
+  "sprites": [
+    {
+      "assetId": "finalboss-pillar",
+      "name": "FinalBoss_Pillar",
+      "label": "FinalBoss Pillar",
+      "category": "Bosses",
+      "atlasId": "spr-boss-final",
+      "texture": "SPR_Boss_Final",
+      "rect": [
+        77,
+        9,
+        11,
+        80
+      ],
+      "original": [
+        77,
+        10,
+        11,
+        79
+      ]
+    },
+    {
+      "assetId": "finalboss-flame",
+      "name": "FinalBoss_Flame",
+      "label": "FinalBoss Flame",
+      "category": "Bosses",
+      "atlasId": "spr-boss-final",
+      "texture": "SPR_Boss_Final",
+      "rect": [
+        94,
+        60,
+        57,
+        18
+      ],
+      "original": [
+        95,
+        66,
+        7,
+        11
+      ]
+    },
+    {
+      "assetId": "finalboss-left-arm",
+      "name": "FinalBoss_Left_Arm",
+      "label": "FinalBoss Left Arm",
+      "category": "Bosses",
+      "atlasId": "spr-boss-final",
+      "texture": "SPR_Boss_Final",
+      "rect": [
+        104,
+        82,
+        31,
+        33
+      ],
+      "original": [
+        104,
+        82,
+        24,
+        33
+      ]
+    },
+    {
+      "assetId": "finalboss-armor",
+      "name": "FinalBoss_Armor",
+      "label": "FinalBoss Armor",
+      "category": "Bosses",
+      "atlasId": "spr-boss-final",
+      "texture": "SPR_Boss_Final",
+      "rect": [
+        183,
+        3,
+        63,
+        31
+      ],
+      "original": [
+        183,
+        3,
+        63,
+        35
+      ]
+    },
+    {
+      "assetId": "finalboss-bottom",
+      "name": "FinalBoss_Bottom",
+      "label": "FinalBoss Bottom",
+      "category": "Bosses",
+      "atlasId": "spr-boss-final",
+      "texture": "SPR_Boss_Final",
+      "rect": [
+        189,
+        34,
+        52,
+        49
+      ],
+      "original": [
+        194,
+        44,
+        43,
+        29
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "section": "boss-subtitle",
+      "key": "kasparov",
+      "values": [
+        {
+          "lang": "*",
+          "value": "Every Run's End"
+        }
+      ],
+      "original": "Eternal Grandmaster"
+    },
+    {
+      "section": "boss-infos",
+      "key": "final-name",
+      "values": [
+        {
+          "lang": "*",
+          "value": "Grim Reaper"
+        }
+      ],
+      "original": "Mighty Kasparov"
+    },
+    {
+      "section": "boss-infos",
+      "key": "final-lore",
+      "values": [
+        {
+          "lang": "*",
+          "value": "Bankruptcy. Unpreparedness. Blunders. He's seen it all. This entity collects dead runs as they lose their last piece. He knows every run's fate, and if you meet him, it's already too late."
+        }
+      ],
+      "original": "In his quest for the perfect opponent, he found only emptiness. So he forged shadows, again and again,\nto break his solitude. Yet none ever matched him. Alone, undefeated, he vowed to destroy the world… so that finally, someone might dare to stop him."
+    }
+  ],
+  "textures": [
+    {
+      "targetId": "spr-boss-final",
+      "name": "SPR_Boss_Final",
+      "label": "Boss Final",
+      "width": 256,
+      "height": 128,
+      "format": "RGBA32",
+      "file": "atlases/spr-boss-final.png"
+    },
+    {
+      "targetId": "boss-8",
+      "name": "Boss_8",
+      "label": "Boss 8",
+      "width": 1920,
+      "height": 1080,
+      "format": "DXT5",
+      "file": "atlases/boss-8.png"
+    }
+  ],
+  "audio": []
+}

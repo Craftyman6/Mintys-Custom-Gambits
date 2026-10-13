@@ -14,3 +14,9 @@ Removes all text, static, and broken pixels from M3CH4GNUS C4RLS3N (useful for r
 
 ## Reference Pack
 <img width="3840" height="2160" alt="Reference Pack" src="https://github.com/user-attachments/assets/08713307-f0ec-491d-978d-047ffe924dac" />
+
+## Gambooonanza contributions
+- Paranormal Activity's Gambit: Selling a gambit gives Ghost's Gambit. 6/66 chance of giving Demon's Gambit instead.
+- Grim Reaper (Mighty Kasparov reskin)
+- Majora's Moon (Kev Borclick reskin)
+- W. D. Gaster (Judit Polgeisha reskin)

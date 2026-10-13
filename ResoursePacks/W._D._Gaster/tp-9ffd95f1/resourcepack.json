@@ -1,0 +1,439 @@
+{
+  "formatVersion": 1,
+  "id": "tp-9ffd95f1",
+  "name": "W. D. Gaster",
+  "author": "",
+  "summary": "",
+  "description": "",
+  "version": "1.0.0",
+  "gameBuild": "24858528",
+  "createdAt": "2026-10-09T00:05:31.386Z",
+  "updatedAt": "2026-10-11T15:12:44.078Z",
+  "images": [
+    {
+      "assetId": "spr-boss-pupet",
+      "kind": "texture",
+      "name": "SPR_Boss_Pupet",
+      "label": "Boss Pupet",
+      "category": "Bosses",
+      "width": 256,
+      "height": 128,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-boss-pupet",
+      "atlasName": "SPR_Boss_Pupet",
+      "rect": null,
+      "base": null,
+      "file": "images/spr-boss-pupet.png",
+      "addedAt": "2026-10-09T14:07:35.018Z"
+    },
+    {
+      "assetId": "spr-geisha-body",
+      "kind": "texture",
+      "name": "SPR_Geisha_Body",
+      "label": "Geisha Body",
+      "category": "Bosses",
+      "width": 64,
+      "height": 64,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-geisha-body",
+      "atlasName": "SPR_Geisha_Body",
+      "rect": null,
+      "base": null,
+      "file": "images/spr-geisha-body.png",
+      "addedAt": "2026-10-09T14:12:54.042Z"
+    },
+    {
+      "assetId": "spr-geisha-fan",
+      "kind": "sprite",
+      "name": "SPR_Geisha_Fan",
+      "label": "Geisha Fan",
+      "category": "Bosses",
+      "width": 41,
+      "height": 30,
+      "format": "RGBA32",
+      "compressed": false,
+      "atlasId": "spr-geisha-fan-2",
+      "atlasName": "SPR_Geisha_Fan",
+      "rect": [
+        11,
+        24,
+        41,
+        30
+      ],
+      "base": [
+        11,
+        24,
+        41,
+        30
+      ],
+      "file": "images/spr-geisha-fan.png",
+      "addedAt": "2026-10-10T03:09:35.411Z"
+    },
+    {
+      "assetId": "boss-2",
+      "kind": "texture",
+      "name": "Boss_2",
+      "label": "Boss 2",
+      "category": "Bosses",
+      "width": 1920,
+      "height": 1080,
+      "format": "DXT5",
+      "compressed": true,
+      "atlasId": "boss-2",
+      "atlasName": "Boss_2",
+      "rect": null,
+      "base": null,
+      "file": "images/boss-2.png",
+      "addedAt": "2026-10-11T15:12:43.689Z"
+    }
+  ],
+  "sprites": [
+    {
+      "assetId": "spr-boss-pupet-eyes",
+      "name": "SPR_Boss_Pupet_Eyes",
+      "label": "Boss Pupet Eyes",
+      "category": "Bosses",
+      "atlasId": "spr-boss-pupet",
+      "texture": "SPR_Boss_Pupet",
+      "rect": [
+        119,
+        9,
+        38,
+        20
+      ],
+      "original": [
+        122,
+        4,
+        38,
+        16
+      ]
+    },
+    {
+      "assetId": "spr-boss-pupet-jaw",
+      "name": "SPR_Boss_Pupet_Jaw",
+      "label": "Boss Pupet Jaw",
+      "category": "Bosses",
+      "atlasId": "spr-boss-pupet",
+      "texture": "SPR_Boss_Pupet",
+      "rect": [
+        201,
+        104,
+        32,
+        20
+      ],
+      "original": [
+        196,
+        104,
+        42,
+        20
+      ]
+    },
+    {
+      "assetId": "spr-boss-pupet-finger",
+      "name": "SPR_Boss_Pupet_Finger",
+      "label": "Boss Pupet Finger",
+      "category": "Bosses",
+      "atlasId": "spr-boss-pupet",
+      "texture": "SPR_Boss_Pupet",
+      "rect": [
+        189,
+        94,
+        9,
+        21
+      ],
+      "original": [
+        189,
+        94,
+        9,
+        12
+      ]
+    },
+    {
+      "assetId": "spr-boss-pupet-hand-l",
+      "name": "SPR_Boss_Pupet_Hand_L",
+      "label": "Boss Pupet Hand L",
+      "category": "Bosses",
+      "atlasId": "spr-boss-pupet",
+      "texture": "SPR_Boss_Pupet",
+      "rect": [
+        97,
+        113,
+        25,
+        10
+      ],
+      "original": [
+        100,
+        115,
+        22,
+        8
+      ]
+    },
+    {
+      "assetId": "spr-boss-pupet-hand-r",
+      "name": "SPR_Boss_Pupet_Hand_R",
+      "label": "Boss Pupet Hand R",
+      "category": "Bosses",
+      "atlasId": "spr-boss-pupet",
+      "texture": "SPR_Boss_Pupet",
+      "rect": [
+        128,
+        113,
+        25,
+        10
+      ],
+      "original": [
+        128,
+        115,
+        22,
+        8
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "section": "boss-subtitle",
+      "key": "geisha",
+      "values": [
+        {
+          "lang": "*",
+          "value": "The Man Who Speaks in Hands"
+        }
+      ],
+      "original": "Queen of Illusions"
+    },
+    {
+      "section": "boss-infos",
+      "key": "geisha-name",
+      "values": [
+        {
+          "lang": "*",
+          "value": "W. D. Gaster"
+        }
+      ],
+      "original": "Judit Polgeisha"
+    },
+    {
+      "section": "boss-infos",
+      "key": "geisha-lore",
+      "values": [
+        {
+          "lang": "*",
+          "value": "He was shattered across time and space after he fell into his own creation. Now, he haunts the underground as a specter seeking answers and revenge."
+        }
+      ],
+      "original": "Born to win with elegance, to unsettle and destabilize her opponent, she chose to play a different game... and now, her illusions serve only to trap those who venture too close."
+    }
+  ],
+  "textures": [
+    {
+      "targetId": "spr-boss-pupet",
+      "name": "SPR_Boss_Pupet",
+      "label": "Boss Pupet",
+      "width": 256,
+      "height": 128,
+      "format": "RGBA32",
+      "file": "atlases/spr-boss-pupet.png"
+    },
+    {
+      "targetId": "spr-geisha-body",
+      "name": "SPR_Geisha_Body",
+      "label": "Geisha Body",
+      "width": 64,
+      "height": 64,
+      "format": "RGBA32",
+      "file": "atlases/spr-geisha-body.png"
+    },
+    {
+      "targetId": "spr-geisha-fan-2",
+      "name": "SPR_Geisha_Fan",
+      "label": "Geisha Fan",
+      "width": 64,
+      "height": 64,
+      "format": "RGBA32",
+      "file": "atlases/spr-geisha-fan-2.png"
+    },
+    {
+      "targetId": "boss-2",
+      "name": "Boss_2",
+      "label": "Boss 2",
+      "width": 1920,
+      "height": 1080,
+      "format": "DXT5",
+      "file": "atlases/boss-2.png"
+    }
+  ],
+  "audio": [
+    {
+      "assetId": "audio-s-geishaboss-angry-01",
+      "name": "S_GeishaBoss_Angry_01",
+      "label": "S GeishaBoss Angry 01",
+      "file": "audio/audio-s-geishaboss-angry-01.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 3.062854166666667,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-angry-02",
+      "name": "S_GeishaBoss_Angry_02",
+      "label": "S GeishaBoss Angry 02",
+      "file": "audio/audio-s-geishaboss-angry-02.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 3.062854166666667,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-apparition",
+      "name": "S_GeishaBoss_Apparition",
+      "label": "S GeishaBoss Apparition",
+      "file": "audio/audio-s-geishaboss-apparition.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 7.871520833333333,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-death",
+      "name": "S_GeishaBoss_Death",
+      "label": "S GeishaBoss Death",
+      "file": "audio/audio-s-geishaboss-death.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 5.8483125,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-down-01",
+      "name": "S_GeishaBoss_Jaw_Down_01",
+      "label": "S GeishaBoss Jaw Down 01",
+      "file": "audio/audio-s-geishaboss-jaw-down-01.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.181125,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-down-02",
+      "name": "S_GeishaBoss_Jaw_Down_02",
+      "label": "S GeishaBoss Jaw Down 02",
+      "file": "audio/audio-s-geishaboss-jaw-down-02.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.17545833333333333,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-down-03",
+      "name": "S_GeishaBoss_Jaw_Down_03",
+      "label": "S GeishaBoss Jaw Down 03",
+      "file": "audio/audio-s-geishaboss-jaw-down-03.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.12454166666666666,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-down-04",
+      "name": "S_GeishaBoss_Jaw_Down_04",
+      "label": "S GeishaBoss Jaw Down 04",
+      "file": "audio/audio-s-geishaboss-jaw-down-04.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.14152083333333335,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-down-05",
+      "name": "S_GeishaBoss_Jaw_Down_05",
+      "label": "S GeishaBoss Jaw Down 05",
+      "file": "audio/audio-s-geishaboss-jaw-down-05.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.11320833333333333,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-down-06",
+      "name": "S_GeishaBoss_Jaw_Down_06",
+      "label": "S GeishaBoss Jaw Down 06",
+      "file": "audio/audio-s-geishaboss-jaw-down-06.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.12452083333333333,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-up-01",
+      "name": "S_GeishaBoss_Jaw_Up_01",
+      "label": "S GeishaBoss Jaw Up 01",
+      "file": "audio/audio-s-geishaboss-jaw-up-01.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.118875,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-up-02",
+      "name": "S_GeishaBoss_Jaw_Up_02",
+      "label": "S GeishaBoss Jaw Up 02",
+      "file": "audio/audio-s-geishaboss-jaw-up-02.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.118875,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-up-03",
+      "name": "S_GeishaBoss_Jaw_Up_03",
+      "label": "S GeishaBoss Jaw Up 03",
+      "file": "audio/audio-s-geishaboss-jaw-up-03.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.11320833333333333,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-up-04",
+      "name": "S_GeishaBoss_Jaw_Up_04",
+      "label": "S GeishaBoss Jaw Up 04",
+      "file": "audio/audio-s-geishaboss-jaw-up-04.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.12452083333333333,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-up-05",
+      "name": "S_GeishaBoss_Jaw_Up_05",
+      "label": "S GeishaBoss Jaw Up 05",
+      "file": "audio/audio-s-geishaboss-jaw-up-05.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.14716666666666667,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-jaw-up-06",
+      "name": "S_GeishaBoss_Jaw_Up_06",
+      "label": "S GeishaBoss Jaw Up 06",
+      "file": "audio/audio-s-geishaboss-jaw-up-06.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 0.181125,
+      "bits": 16
+    },
+    {
+      "assetId": "audio-s-geishaboss-laughing",
+      "name": "S_GeishaBoss_Laughing",
+      "label": "S GeishaBoss Laughing",
+      "file": "audio/audio-s-geishaboss-laughing.wav",
+      "channels": 2,
+      "sampleRate": 48000,
+      "duration": 2.1241875,
+      "bits": 16
+    }
+  ]
+}
