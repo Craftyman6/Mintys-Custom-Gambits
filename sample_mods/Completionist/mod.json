@@ -1,0 +1,10 @@
+{
+  "id": "Completionist",
+  "name": "Completionist",
+  "version": "1.1.0",
+  "author": "Minty",
+  "entry": "Gambonanza.Completionist.CompletionistMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Supplies a console command for getting a count of king medals"
+}

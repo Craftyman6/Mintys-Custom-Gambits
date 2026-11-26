@@ -1,0 +1,17 @@
+{
+  "id": "StockSwap",
+  "name": "Stock Swap",
+  "version": "1.0.0",
+  "author": "Minty",
+  "entry": "Gambonanza.StockSwap.StockSwapMod",
+  "enabled": true,
+  "gameVersion": ">=1.0",
+  "description": "Using a keybind on a piece sends it from the stock to the board, or vise versa.",
+  "keybinds": [
+    {
+      "name": "swapStock",
+      "description": "Press on a piece to swap it between stock and board",
+      "key": "Mouse2"
+    }
+  ]
+}
