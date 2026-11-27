@@ -63,14 +63,15 @@ namespace Gambonanza.Completionist
                     }
                     totalCount++;
                 }
-                double missingPercentage = Math.Round(missingCount * 100.0 / totalCount, 2);
-                console.PrintInfo(missingPercentage + "% of gambits have king medals (" + missingCount + "/" + totalCount + ")");
+                int gottenCount = totalCount - missingCount;
+                double gottenPercentage = Math.Round(gottenCount * 100.0 / totalCount, 2);
+                console.PrintInfo(gottenPercentage + "% of gambits have king medals (" + gottenPercentage + "/" + totalCount + ")");
                 console.PrintInfo("The gambits without king medals are as follows:");
                 foreach (List<SO_Gambit> gambitsByRarity in missingGambits.Values)
                 {
                     if (gambitsByRarity.Any()) {
                         console.PrintInfo("");
-                        console.PrintInfo(rarities[gambitsByRarity.First().Rarity]);
+                        console.PrintInfo(rarities[gambitsByRarity.First().Rarity] + " (" + gambitsByRarity.Length + ")");
                     } else {
                         continue;
                     }
@@ -81,7 +82,7 @@ namespace Gambonanza.Completionist
                     }
                 }
                 console.PrintInfo("");
-                console.PrintInfo(missingPercentage + "% of gambits have king medals (" + missingCount + "/" + totalCount + ")");
+                console.PrintInfo(gottenPercentage + "% of gambits have king medals (" + gottenPercentage + "/" + totalCount + ")");
             },
 
             // No tab completer

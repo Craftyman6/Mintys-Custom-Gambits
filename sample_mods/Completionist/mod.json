@@ -1,7 +1,7 @@
 {
   "id": "Completionist",
   "name": "Completionist",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Minty",
   "entry": "Gambonanza.Completionist.CompletionistMod",
   "enabled": true,
